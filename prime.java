@@ -11,6 +11,7 @@ class PrimeExample{
    }    
   }    
   if(flag==0)    
-  System.out.println("Number is prime");    
+  System.out.println("Number is prime");  
+  System.out.println("*****");  
 }  
 }  
