@@ -5,5 +5,6 @@ public class Hellow{
    {   
    for(int j=2;j<=i;j++)
    System.out.println("*");
+   System.out.println("Fuckyou");
 }
 }}
