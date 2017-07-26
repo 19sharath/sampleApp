@@ -6,4 +6,5 @@ public class Hellow{
    for(int j=i+1;j<=i;j++)
    System.out.print("*");
 } 
+  System.out.println(" ");
 }}
