@@ -5,10 +5,5 @@ public class Hellow{
    {   
    for(int j=1;j<=i;j++)
    System.out.println("*");
-<<<<<<< HEAD
 }
 }}
-=======
-}}
-}
->>>>>>> ffa8f6665f56226191b30bfe8f9fe45a54272711
