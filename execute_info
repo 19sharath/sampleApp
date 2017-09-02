@@ -1,0 +1,28 @@
+bash "bash script" do
+ user "root"
+ code "mkdir -p /var/www/sites/ && chown -R apach /var/www/sites/"
+# not_if '[ -d /var/www/sites/ ]'
+not_if do
+ File.directory?('/var/www/sistes/')
+ end
+end
+
+execute "run a script" do
+user "root"
+ command <<-EOH
+ mkdir -p /var/www/sites/ /
+ chown -R apache /var/www/sites/
+ EOH
+ not_if
+end
+
+execute "run script" do
+ user "root"
+ command './myscript.sh'
+ not_if
+end
+
+ directory "/var/www/sistes" do
+owner 'ec2-user'
+recursive true
+
